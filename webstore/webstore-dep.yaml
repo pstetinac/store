@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: webstore
+  name: pststore
   labels:
-    app: webstore
+    app: pststore
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: webstore
+      app: pststore
   template:
     metadata:
       labels:
-        app: webstore
+        app: pststore
     spec:
       containers:
-        - name: webstore
+        - name: pststore
           image: docker.io/stetinapavel/publicstore:v1
           imagePullPolicy: IfNotPresent
           ports:
