@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: webstore
-          image: alpnginx:latest
+          image: sysztex/alpnginx:v1
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 80
