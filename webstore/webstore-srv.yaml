@@ -1,10 +1,10 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name: webstore-proxy
+  name: pststore-svc
 spec:
   selector:
-    app: webstore
+    app: pststore
   type: NodePort
   ports:
     - port: 80
