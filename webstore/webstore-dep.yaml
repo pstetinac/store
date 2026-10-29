@@ -19,5 +19,5 @@ spec:
           image: docker.io/pavelstetina/publicstore:v1
           imagePullPolicy: IfNotPresent
           ports:
-            - containerPort: 8080
-            - containerPort: 4443
+            - containerPort: 80
+            - containerPort: 443

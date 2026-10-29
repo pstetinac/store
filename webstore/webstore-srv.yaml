@@ -1,12 +1,12 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name: pstore-svc
+  name: pstore-service
 spec:
   selector:
     app: pstore
   type: NodePort
   ports:
-    - port: 8080
-      targetPort: 8080
-      nodePort: 30200
+    - port: 80
+      targetPort: 80
+      nodePort: 31200
